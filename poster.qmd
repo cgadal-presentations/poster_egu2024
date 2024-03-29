@@ -1,0 +1,136 @@
+---
+format:
+  revealjs:
+    theme: [dark, custom.scss]
+    width: 1920
+    height: 1080
+    callout-icon: false
+    slide-number: false
+    margin: 0
+---
+
+:::: {.columns}
+
+::: {.column width="20%" .sidecolumn} 
+
+
+<h2 style="margin-top:10px"> {{< fa book >}} - Introduction </h2>
+
+::: {layout="[2.5, 0.01, 2]" layout-valign="center"}
+![Underwater view of the River Tara riverbed, Montenegro, USA
+$@$LiquiArt](poster_files/src/images/Tara_River_Underwater.jpg)
+
+$+$
+
+![Sanmenxia Dam during silt flushing, China
+$@$RolfMueller](poster_files/src/images/Sanmenxia_dam_silt_flushing.jpg)
+:::
+
+{{< fa question-circle >}} &nbsp; suspended particles above riverbed {{< fa arrow-right >}} where does the fine particles go? 
+
+- field measurements:
+  - inferred from hydraulic conductivity/permeability (precision and reliability?) 
+  - cryogenic samples (hard and expensive)
+  
+- analogue lab. experiments:
+  - column or channel
+  - porous matrix is optically opaque (sand, glass beads)
+
+:::{.boxed-orange .centered}
+
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span>isolated time/space vertical profiles.</li>
+  <li><span class="fa-li"><i class="fa fa-question-circle"></i></span>How to measure the spatio-temporal dynamics?</li>
+</ul>
+
+:::
+
+<!-- {{< fa arrow-right >}} &nbsp; isolated time/space vertical profiles.
+
+{{< fa question-circle >}} &nbsp; How to measure the spatio-temporal dyanmics?
+ -->
+
+<h2> {{< fa gears >}} - Methods </h2>
+
+- See the center column for the experimental setup
+- Parameters:
+  - flow velocity $\sim 5~\textrm{cm/s}$
+  - suspended sediment: polystyrene beads, $d \sim 140~\mu\textrm{m}$
+  - hydrogel beads: $d \sim 1.5~\textrm{cm}$
+  - volume fraction: $\phi \sim 0.1~\%$
+
+<h2> {{< fa lightbulb >}} - Results (suspended flow) </h2>
+
+![](poster_files/src/figures/fig_udv_data.svg){width=100% fig-align="center"}
+
+
+:::
+
+::: {.column width="60%" .maincolumn}
+
+::: {#mainMessage}
+**Looking inside the riverbed using hydrogel beads!**
+:::
+
+![](poster_files/src/figures/expe_set-up_annoted.svg){fig-align="center"}
+
+<!-- ![](src/QRcodes/video_lock_release.svg){.absolute top=20 left=1430 width=50 height=50 #QRcodemain} -->
+
+
+<!-- ![](src/QRcodes/paper.svg){.absolute top=380 left=1340 width=90 height=90 #QRcodemain} -->
+
+:::: {style="max-width: 50%; margin: 35px auto; border-bottom: 3px solid #71767a;"}
+::::
+
+![Snapshots of an experiment.](poster_files/src/figures/snapshots.svg){fig-align="center"}
+
+
+::: {#posterfooter}
+*An experimental set-up for the spatio-temporal quantification of fine particle infiltration in porous beds*
+
+C. Gadal (cyril.gadal@imft.fr), M. Mercier and L. Lacaze. Institut de Mécanique des Fluides de Toulouse (IMFT), France
+:::
+
+:::
+
+::: {.column width="20%" .sidecolumn} 
+
+::: {style='text-align:center' #logos}
+![](poster_files/src/logos/EGU22-sharing-is-encouraged.png){height=65px fig-align="right" #Logoimage}
+![](poster_files/src/logos/logo_IMFT.jpg){height=65px fig-align="right" #Logoimage}
+![](poster_files/src/logos/OFB_190702_PHILOGENIQUE_JG-02.jpg){height=65px fig-align="right" #Logoimage}
+:::
+
+<h2> {{< fa lightbulb >}} - Results (porous matrix) </h2>
+
+![](poster_files/src/figures/figure_infiltration_front_velocity.svg){width=100% fig-align="center"}
+
+- infiltration velocity starts at $w_{\rm s}$, then increases in $t^{3/2}$
+
+
+<h2> {{< fa square-check regular >}} - Conclusion </h2>
+
+:::{.boxed-orange .centered}
+
+<ul class="fa-ul">
+  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span>characterizable in terms of inflow conditions</li>
+  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span>spatio-temporal monitoring of infiltration</li>
+</ul>
+
+:::
+
+<h2> {{< fa file-circle-question >}} - Discussion/Perspectives </h2>
+
+- Full exploration of parameter space:
+  - spatio-temporal law for infiltration
+  - link with flow conditions
+  - clogging and unclogging thresholds 
+- particle dynamics inside porous media, close-up view
+
+![Steady injection of a suspension building a deposit over time.](poster_files/src/images/PXL_20230725_140126323.jpg){width=100% fig-align="center"}
+
+<!-- ![](src/QRcodes/video_steady_input.svg){.absolute top=660 right=20 #QRcodeside} -->
+
+:::
+
+::::
