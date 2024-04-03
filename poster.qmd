@@ -14,33 +14,36 @@ format:
 ::: {.column width="20%" .sidecolumn} 
 
 
-<h2 style="margin-top:10px"> {{< fa book >}} - Introduction </h2>
+<h2 style="margin-top:10px; margin-bottom:20px"> {{< fa book >}} - Introduction </h2>
 
-::: {layout="[2.5, 0.01, 2]" layout-valign="center"}
+::: {layout="[3.97, 2]" layout-valign="top" style='margin-bottom:0px'}
 ![Underwater view of the River Tara riverbed, Montenegro, USA
 $@$LiquiArt](poster_files/src/images/Tara_River_Underwater.jpg)
-
-$+$
 
 ![Sanmenxia Dam during silt flushing, China
 $@$RolfMueller](poster_files/src/images/Sanmenxia_dam_silt_flushing.jpg)
 :::
 
-{{< fa question-circle >}} &nbsp; suspended particles above riverbed {{< fa arrow-right >}} where does the fine particles go? 
+The porous riverbed plays a crucial role in many transfers between the river and surrounding aquifers. As **fine particles** suspended within the flow settle, they **can infiltrate the pores**. **Quantifying this process is challenging**. In the field, **measurements** either are **difficult** (cryogenic sampling) or have **limited accuracy** (inference from hydraulic conductivity). In laboratory experiments, the **porous matrix is optically opaque** (sand, glass beads), resulting in sampling after the experiment. **This results in measurements at a single point in space and time.**
 
-- field measurements:
+<!-- {{< fa question-circle >}} &nbsp; suspended particles inside the flow {{< fa arrow-right >}} can they infiltrate the riverbed? How? How far? How fast?
+
+<!-- ::: {.centered style="margin-bottom:0px"}
+**Current measurements:**
+::: -->
+
+<!-- - field measurements:
   - inferred from hydraulic conductivity/permeability (precision and reliability?) 
   - cryogenic samples (hard and expensive)
   
 - analogue lab. experiments:
-  - column or channel
-  - porous matrix is optically opaque (sand, glass beads)
+  - porous matrix is optically opaque (sand, glass beads) so sampling after experiment -->
 
 :::{.boxed-orange .centered}
 
 <ul class="fa-ul">
-  <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span>isolated time/space vertical profiles.</li>
-  <li><span class="fa-li"><i class="fa fa-question-circle"></i></span>How to measure the spatio-temporal dynamics?</li>
+  <!-- <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span>single point measurement (time, space).</li> -->
+  <li><span class="fa-li"><i class="fa fa-question-circle"></i></span>How to measure continuously the spatio-temporal dynamics of the infiltration?</li>
 </ul>
 
 :::
@@ -79,16 +82,18 @@ $@$RolfMueller](poster_files/src/images/Sanmenxia_dam_silt_flushing.jpg)
 
 <!-- ![](src/QRcodes/paper.svg){.absolute top=380 left=1340 width=90 height=90 #QRcodemain} -->
 
-:::: {style="max-width: 50%; margin: 35px auto; border-bottom: 3px solid #71767a;"}
+:::: {style="max-width: 50%; margin: 25px auto; border-bottom: 3px solid #71767a;"}
 ::::
 
 ![Snapshots of an experiment.](poster_files/src/figures/snapshots.svg){fig-align="center"}
 
+![](poster_files/src/qr-code.svg){.absolute top=782 left=1455 width=50 height=50 #QRcodemain}
+
 
 ::: {#posterfooter}
-*An experimental set-up for the spatio-temporal quantification of fine particle infiltration in porous beds*
+**An experimental set-up for the spatio-temporal quantification of fine particle infiltration in porous beds**
 
-C. Gadal (cyril.gadal@imft.fr), M. Mercier and L. Lacaze. Institut de Mécanique des Fluides de Toulouse (IMFT), France
+C. Gadal (cyril.gadal@imft.fr), M.J. Mercier and L. Lacaze. Institut de Mécanique des Fluides de Toulouse (IMFT), France
 :::
 
 :::
@@ -105,7 +110,7 @@ C. Gadal (cyril.gadal@imft.fr), M. Mercier and L. Lacaze. Institut de Mécanique
 
 ![](poster_files/src/figures/figure_infiltration_front_velocity.svg){width=100% fig-align="center"}
 
-- infiltration velocity starts at $w_{\rm s}$, then increases in $t^{3/2}$
+- infiltration velocity starts at $w_{\rm s}$, then increases in $t^{1/2}$
 
 
 <h2> {{< fa square-check regular >}} - Conclusion </h2>
@@ -127,9 +132,8 @@ C. Gadal (cyril.gadal@imft.fr), M. Mercier and L. Lacaze. Institut de Mécanique
   - clogging and unclogging thresholds 
 - particle dynamics inside porous media, close-up view
 
-![Steady injection of a suspension building a deposit over time.](poster_files/src/images/PXL_20230725_140126323.jpg){width=100% fig-align="center"}
+![Close-up view on the transparent porous matrix filled with fine particles.](poster_files/src/images/PXL_20230725_140126323.jpg){width=100% fig-align="center"}
 
-<!-- ![](src/QRcodes/video_steady_input.svg){.absolute top=660 right=20 #QRcodeside} -->
 
 :::
 

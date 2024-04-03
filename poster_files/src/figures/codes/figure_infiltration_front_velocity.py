@@ -35,6 +35,7 @@ def fitfunc(log_t):
 y, timings = data["front_infiltration"]["z"], data["front_infiltration"]["t"]
 xrefs = data["xrefs"]
 x = data["x"]
+ws = 0.053  # [cm/s]
 
 gmodel_aff = Model(affine)
 params = gmodel_aff.make_params(a=2, b=1.2)
@@ -51,29 +52,43 @@ a_m, a_std = np.nanmean(a), np.nanstd(a)
 b_m, b_std = np.exp(np.nanmean(b)), np.exp(np.nanstd(b))
 
 # %%
-t_plot = np.logspace(1.3, 2.4, 100)
+t_plot = np.logspace(1.3, 2.6, 100)
 colors = plt.cm.viridis((xrefs - gen_pars.x_ref) / (xrefs.min() - xrefs.max()))
+labels = [rf"$x_{{{xrefs.size - i}}}$" for i in range(xrefs.size)]
 
-figsize = np.array([quarto.regular_fig_width, 0.75*quarto.regular_fig_width])
-fig, ax = plt.subplots(1, 1, layout="constrained", figsize=figsize/1.25)
+figsize = np.array([quarto.regular_fig_width, 0.75 * quarto.regular_fig_width])
+fig, axmain = plt.subplots(1, 1, layout="constrained", figsize=figsize / 1.25)
+ax_inset = axmain.inset_axes([0.1, 0.1, 0.4, 0.4])
 
-for timing, color, xref in zip(timings[:, xrefs].T, colors, xrefs):
-    ax.plot(
-        timing,
-        y,
-        color=color,
-        # label='{:.0f}'.format(x[xref])
-    )
+for ax in [ax_inset, axmain]:
+    lines = []
+    for timing, color, label in zip(timings[:, xrefs[1:]].T[::-1], colors[1:][::-1], labels[1:][::-1]):
+        lines.append(ax.plot(timing, y, color=color, label=label)[0])
 
-ax.plot(t_plot, b_m * t_plot**a_m, label=rf"$d = {b_m:.2f} t^{{{a_m:.1f}}}$", color="tab:orange")
+    (l1,) = ax.plot(t_plot, b_m * t_plot**a_m, label=rf"$d = {b_m:.2f} t^{{{a_m:.1f}}}$", color="tab:orange")
+    (l2,) = ax.plot(t_plot, ws * t_plot, color="tab:orange", ls="--", label=r"$d = w_{\rm s} t$")
 
-ax.legend()
-ax.set_xscale("log")
-ax.set_yscale("log")
-ax.set_xlabel("Time [s]")
-ax.set_xlim(left=9)
-ax.set_ylabel("Front position [cm]")
-ax.invert_yaxis()
+leg1 = axmain.legend(handles=lines, ncols=3, title="positions", loc="upper right", fontsize=10)
+leg2 = axmain.legend(handles=[l1, l2], loc="lower right", fontsize=10, bbox_to_anchor=[1, 0.53])
+axmain.add_artist(leg1)
+
+ax_inset.set_ylim(1, 26)
+ax_inset.set_xlim(20, 275)
+ax_inset.set_xscale("log")
+ax_inset.set_yscale("log")
+# ax_inset.set_xlabel("$t$ [s]", labelpad=0, loc="left")
+# ax_inset.set_ylabel("$d$ [cm]", labelpad=0)
+axmain.text(76, 25.25, "$t$ [s]")
+axmain.text(28, 17.85, "$d$ [cm]", rotation=90)
+
+
+axmain.set_ylim(0, 26)
+axmain.set_xlim(20, 275)
+axmain.set_xlabel("Time, $t$ [s]")
+axmain.set_ylabel("Front depth, $d$ [cm]")
+
+for ax in [ax_inset, axmain]:
+    ax.invert_yaxis()
 
 figname = "../{}.svg".format(sys.argv[0].split(os.sep)[-1].replace(".py", ""))
 fig.savefig(figname, dpi=400)

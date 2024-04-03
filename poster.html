@@ -330,12 +330,12 @@
 
 <div class="columns">
 <div class="column sidecolumn" style="width:20%;">
-<h2 style="margin-top:10px">
+<h2 style="margin-top:10px; margin-bottom:20px">
 <i class="fa-solid fa-book" aria-label="book"></i> - Introduction
 </h2>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-center">
-<div class="quarto-layout-cell" style="flex-basis: 55.4%;justify-content: center;">
+<div class="quarto-layout-panel" style="margin-bottom:0px">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 66.5%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="poster_files/src/images/Tara_River_Underwater.jpg"></p>
@@ -343,10 +343,7 @@
 </figure>
 </div>
 </div>
-<div class="quarto-layout-cell" style="flex-basis: 0.2%;justify-content: center;">
-<p><span class="math inline">\(+\)</span></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 44.4%;justify-content: center;">
+<div class="quarto-layout-cell" style="flex-basis: 33.5%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="poster_files/src/images/Sanmenxia_dam_silt_flushing.jpg"></p>
@@ -356,26 +353,23 @@
 </div>
 </div>
 </div>
-<p><i class="fa-solid fa-question-circle" aria-label="question-circle"></i> &nbsp; suspended particles above riverbed <i class="fa-solid fa-arrow-right" aria-label="arrow-right"></i> where does the fine particles go?</p>
-<ul>
-<li>field measurements:
-<ul>
-<li>inferred from hydraulic conductivity/permeability (precision and reliability?)</li>
-<li>cryogenic samples (hard and expensive)</li>
-</ul></li>
-<li>analogue lab. experiments:
-<ul>
-<li>column or channel</li>
-<li>porous matrix is optically opaque (sand, glass beads)</li>
-</ul></li>
-</ul>
+<p>The porous riverbed plays a crucial role in many transfers between the river and surrounding aquifers. As <strong>fine particles</strong> suspended within the flow settle, they <strong>can infiltrate the pores</strong>. <strong>Quantifying this process is challenging</strong>. In the field, <strong>measurements</strong> either are <strong>difficult</strong> (cryogenic sampling) or have <strong>limited accuracy</strong> (inference from hydraulic conductivity). In laboratory experiments, the <strong>porous matrix is optically opaque</strong> (sand, glass beads), resulting in sampling after the experiment. <strong>This results in measurements at a single point in space and time.</strong></p>
+<!--  &nbsp; suspended particles inside the flow  can they infiltrate the riverbed? How? How far? How fast?
+
+<!-- ::: {.centered style="margin-bottom:0px"}
+**Current measurements:**
+::: -->
+<!-- - field measurements:
+  - inferred from hydraulic conductivity/permeability (precision and reliability?) 
+  - cryogenic samples (hard and expensive)
+  
+- analogue lab. experiments:
+  - porous matrix is optically opaque (sand, glass beads) so sampling after experiment -->
 <div class="boxed-orange centered">
 <ul class="fa-ul">
+<!-- <li><span class="fa-li"><i class="fa fa-arrow-right"></i></span>single point measurement (time, space).</li> -->
 <li>
-<span class="fa-li"><i class="fa fa-arrow-right"></i></span>isolated time/space vertical profiles.
-</li>
-<li>
-<span class="fa-li"><i class="fa fa-question-circle"></i></span>How to measure the spatio-temporal dynamics?
+<span class="fa-li"><i class="fa fa-question-circle"></i></span>How to measure continuously the spatio-temporal dynamics of the infiltration?
 </li>
 </ul>
 </div>
@@ -415,7 +409,7 @@
 </div>
 <!-- ![](src/QRcodes/video_lock_release.svg){.absolute top=20 left=1430 width=50 height=50 #QRcodemain} -->
 <!-- ![](src/QRcodes/paper.svg){.absolute top=380 left=1340 width=90 height=90 #QRcodemain} -->
-<div style="max-width: 50%; margin: 35px auto; border-bottom: 3px solid #71767a;">
+<div style="max-width: 50%; margin: 25px auto; border-bottom: 3px solid #71767a;">
 
 </div>
 <div class="quarto-figure quarto-figure-center">
@@ -424,9 +418,10 @@
 <figcaption>Snapshots of an experiment.</figcaption>
 </figure>
 </div>
+<p><img data-src="poster_files/src/qr-code.svg" id="QRcodemain" class="absolute" style="top: 782px; left: 1455px; width: 50px; height: 50px; "></p>
 <div id="posterfooter">
-<p><em>An experimental set-up for the spatio-temporal quantification of fine particle infiltration in porous beds</em></p>
-<p>C. Gadal (cyril.gadal@imft.fr), M. Mercier and L. Lacaze. Institut de Mécanique des Fluides de Toulouse (IMFT), France</p>
+<p><strong>An experimental set-up for the spatio-temporal quantification of fine particle infiltration in porous beds</strong></p>
+<p>C. Gadal (cyril.gadal@imft.fr), M.J. Mercier and L. Lacaze. Institut de Mécanique des Fluides de Toulouse (IMFT), France</p>
 </div>
 </div><div class="column sidecolumn" style="width:20%;">
 <div id="logos" style="text-align:center">
@@ -441,7 +436,7 @@
 </figure>
 </div>
 <ul>
-<li>infiltration velocity starts at <span class="math inline">\(w_{\rm s}\)</span>, then increases in <span class="math inline">\(t^{3/2}\)</span></li>
+<li>infiltration velocity starts at <span class="math inline">\(w_{\rm s}\)</span>, then increases in <span class="math inline">\(t^{1/2}\)</span></li>
 </ul>
 <h2>
 <i class="fa-square-check fa-regular" aria-label="regular"></i> - Conclusion
@@ -471,10 +466,9 @@
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="poster_files/src/images/PXL_20230725_140126323.jpg" style="width:100.0%"></p>
-<figcaption>Steady injection of a suspension building a deposit over time.</figcaption>
+<figcaption>Close-up view on the transparent porous matrix filled with fine particles.</figcaption>
 </figure>
 </div>
-<!-- ![](src/QRcodes/video_steady_input.svg){.absolute top=660 right=20 #QRcodeside} -->
 </div>
 </div>
 <div class="footer footer-default">

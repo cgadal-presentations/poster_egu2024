@@ -44,15 +44,16 @@ $font-family-sans-serif: Roboto, sans-serif !default;
     margin-bottom: 10px
 }
 
-.reveal .slides .quarto-figure img {
-    margin-bottom: 0px;
-    max-width: 100%;
-    max-height: 100%;
-}
+// .reveal .slides .quarto-figure img {
+//     margin-bottom: 0px;
+//     max-width: 100%;
+//     max-height: 100%;
+// }
 
 .reveal .slides .boxed-orange {
     border: 3px solid lightsalmon;
-    padding: 3px
+    padding: 3px;
+    padding-left: 15px;
 }
 
 .reveal .slides .centered {
@@ -121,7 +122,7 @@ $font-family-sans-serif: Roboto, sans-serif !default;
     margin-bottom: 30px;
 }
 
-.reveal .slides .sidecolumn .quarto-figure img {
+.reveal .slides .quarto-figure img {
     margin-bottom: 0px;
     margin-top: 0px;
     max-width: 100%;
@@ -130,8 +131,8 @@ $font-family-sans-serif: Roboto, sans-serif !default;
 
 #mainMessage {
     font-size: 150%;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
