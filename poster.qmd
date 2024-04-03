@@ -58,8 +58,8 @@ The porous riverbed plays a crucial role in many transfers between the river and
 - See the center column for the experimental setup
 - Parameters:
   - flow velocity $\sim 5~\textrm{cm/s}$
-  - suspended sediment: polystyrene beads, $d \sim 140~\mu\textrm{m}$
-  - hydrogel beads: $d \sim 1.5~\textrm{cm}$
+  - suspended sediment: polystyrene beads, diameter $\sim 140~\mu\textrm{m}$ and settling velocity $w_{\rm s} \simeq 0.5$ mm/s
+  - hydrogel beads: diameter $\sim 1.5~\textrm{cm}$
   - volume fraction: $\phi \sim 0.1~\%$
 
 <h2> {{< fa lightbulb >}} - Results (suspended flow) </h2>
