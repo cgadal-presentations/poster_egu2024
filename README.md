@@ -1,6 +1,6 @@
-# Poster -- Slumping regime in lock-release turbidity currents
+# Poster -- An experimental set-up for the spatio-temporal quantification of fine particle infiltration in porous beds
 
-This repository contains a poster presented at EGU 2023 (refs coming soon).
+This repository contains a poster presented at EGU 2024 (refs coming soon).
 
 It can be found online [here](https://cgadal-presentations.github.io/poster_egu2024/poster.html#/). 
 
